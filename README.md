@@ -1,7 +1,6 @@
 from pathlib import Path
 
-# README.md content in user's style
-readme_content = """# 🐶🐱 Dog vs Cat Image Classification
+# 🐶🐱 Dog vs Cat Image Classification
 
 This is my ML project where I built and trained a **Convolutional Neural Network (CNN)** to classify whether an image is of a **Dog** or a **Cat**.  
 I used the **Microsoft Cats vs Dogs dataset** from Kaggle.
