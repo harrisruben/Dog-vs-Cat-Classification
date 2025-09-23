@@ -1,0 +1,28 @@
+# 🗂️ Navigation Guide for Dataset Download
+
+This project uses the Cats vs Dogs dataset from Kaggle.  
+Here’s how you can get it inside your project folder.
+
+## 📥 Steps
+
+1. Make sure you have `kaggle` installed:
+   ```bash
+   pip install kaggle
+   ```
+
+2. Setup your Kaggle API:
+   - Go to [Kaggle Account Settings](https://www.kaggle.com/account)
+   - Create a new API token → This will download `kaggle.json`
+   - Place it inside:  
+     **Windows:** `C:\Users\<YourUsername>\.kaggle\kaggle.json`  
+     **Linux/Mac:** `/home/<YourUsername>/.kaggle/kaggle.json`  
+
+3. Run the script inside `src/`:
+   ```bash
+   python src/download_data.py
+   ```
+
+4. After running, your dataset will be extracted into the `dataset/` folder.
+
+## ✅ Done!
+Now you can use the dataset with the notebooks or model training scripts.
