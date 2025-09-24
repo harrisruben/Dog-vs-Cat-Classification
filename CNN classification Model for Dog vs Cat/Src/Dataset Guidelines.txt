@@ -1,28 +1,33 @@
-# 🗂️ Navigation Guide for Dataset Download
+🗂️ Dataset Navigation Guide
 
-This project uses the Cats vs Dogs dataset from Kaggle.  
-Here’s how you can get it inside your project folder.
+This project uses the **Microsoft Cats vs Dogs dataset** from Kaggle.  
 
-## 📥 Steps
+📥 Direct Dataset Link  
+👉 [Microsoft Cats vs Dogs Dataset (Kaggle)](https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset?select=PetImages)  
 
-1. Make sure you have `kaggle` installed:
-   ```bash
-   pip install kaggle
+🔽 Simple Steps to Get the Dataset  
+
+1. Open **Google Chrome** (or any browser).  
+2. Paste the dataset link above.  
+3. The link will take you directly to the Kaggle dataset page.  
+4. Log in with your Kaggle account.  
+5. Click on **Download** to get the `.zip` file.  
+
+
+📂 How to Extract the Zip in Google Colab  
+
+1. Upload the zip file to your Colab session.  
+   ```python
+   from google.colab import files
+   uploaded = files.upload()   # choose your downloaded zip file
    ```
 
-2. Setup your Kaggle API:
-   - Go to [Kaggle Account Settings](https://www.kaggle.com/account)
-   - Create a new API token → This will download `kaggle.json`
-   - Place it inside:  
-     **Windows:** `C:\Users\<YourUsername>\.kaggle\kaggle.json`  
-     **Linux/Mac:** `/home/<YourUsername>/.kaggle/kaggle.json`  
+2. Extract the dataset:  
+   ```python
+   import zipfile
 
-3. Run the script inside `src/`:
-   ```bash
-   python src/download_data.py
+   with zipfile.ZipFile("microsoft-catsvsdogs-dataset.zip", "r") as zip_ref:
+       zip_ref.extractall("dataset")
    ```
 
-4. After running, your dataset will be extracted into the `dataset/` folder.
-
-## ✅ Done!
-Now you can use the dataset with the notebooks or model training scripts.
+3. Done ✅ Now all the images are inside the **dataset/** folder in Colab.  
