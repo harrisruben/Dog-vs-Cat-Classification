@@ -1,17 +1,17 @@
 🗂️ Dataset Navigation Guide
 
-This project uses the **Microsoft Cats vs Dogs dataset** from Kaggle.  
+This project uses the "Cats vs Dogs dataset" from Kaggle.  
 
 📥 Direct Dataset Link  
 👉 [Microsoft Cats vs Dogs Dataset (Kaggle)](https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset?select=PetImages)  
 
 🔽 Simple Steps to Get the Dataset  
 
-1. Open **Google Chrome** (or any browser).  
+1. Open "Google Chrome" (or any browser).  
 2. Paste the dataset link above.  
 3. The link will take you directly to the Kaggle dataset page.  
 4. Log in with your Kaggle account.  
-5. Click on **Download** to get the `.zip` file.  
+5. Click on "Download" to get the `.zip` file.  
 
 
 📂 How to Extract the Zip in Google Colab  
@@ -30,4 +30,4 @@ This project uses the **Microsoft Cats vs Dogs dataset** from Kaggle.
        zip_ref.extractall("dataset")
    ```
 
-3. Done ✅ Now all the images are inside the **dataset/** folder in Colab.  
+3. Done ✅ Now all the images are inside the "dataset/" folder in Colab.  
